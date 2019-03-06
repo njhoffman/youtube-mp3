@@ -1,6 +1,4 @@
-// https://api.dubtrack.fm/playlist/561ee7984515bea700a0377e/songs?name=&page=1
-module.exports = [
-  {
+[{
     "code":200,
     "message":"OK",
     "data":[
@@ -246,4 +244,4 @@ module.exports = [
   {"_id":"5a5e814f6445ff0100e447ed","added":1516142927351,"songid":"59b540fbce4bae0100debe9a","_song":{"_id":"59b540fbce4bae0100debe9a","name":"Portugal. The Man - Feel It Still (ZHU Remix)","images":{"thumbnail":"https://i.ytimg.com/vi/BBB0-i-Cals/hqdefault.jpg"},"type":"youtube","songLength":215000,"fkid":"BBB0-i-Cals","__v":0,"created":"2017-09-10T13:41:15.521Z"},"playlistid":"596117a926aedd01008fe6ee","__v":0},
   {"_id":"5a6a5c0356b9d001003e2f8b","added":1516919811083,"songid":"58b4a03b2f36cd31002da365","_song":{"_id":"58b4a03b2f36cd31002da365","name":"Arty - Falling Down (feat. Maty Noyes)","images":{"thumbnail":"https://i.ytimg.com/vi/DM9ZnufFhxo/hqdefault.jpg"},"type":"youtube","songLength":227000,"fkid":"DM9ZnufFhxo","__v":0,"created":"2017-02-27T21:55:07.970Z"},"playlistid":"596117a926aedd01008fe6ee","__v":0}
 ]}
-];
+]

@@ -1,3 +1,6 @@
+const path = require('path');
+const appRoot = require('app-root-path');
+
 module.exports = () => ({
   logger: {
     colors: {
@@ -14,7 +17,21 @@ module.exports = () => ({
       level: 3
     },
     stdout: {
-      level: 6
+      level: 5
+    }
+  },
+  data: {
+    plugDj: {
+      filePath: path.join(`${appRoot}`, 'data/plug.dj.json'),
+      ignored: []
+    },
+    dubtrackFm: {
+      filePath: path.join(`${appRoot}`, 'data/dubtrack.fm.json'),
+      ignored: []
+    },
+    youtube: {
+      filePath: path.join(`${appRoot}`, 'data/youtube.json'),
+      ignored: []
     }
   },
   ffmpegPath:          '/path/to/ffmpeg', // Where is the FFmpeg binary located?
