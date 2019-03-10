@@ -1,0 +1,28 @@
+{
+	"selectedTemplates": [
+		{
+			"name": "core-js",
+			"description": "Core JS",
+			"repo": "https://njhoffman@github.com/njhoffman/core-js.git",
+			"path": "/home/vagrant/projects/youtube-mp3/core/core-js"
+		},
+		{
+			"name": "core-api",
+			"description": "Core API",
+			"repo": "https://njhoffman@github.com/njhoffman/core-api.git",
+			"path": "/home/vagrant/projects/youtube-mp3/core/core-api"
+		}
+	],
+	"homeDir": "/home/vagrant",
+	"skipPrompt": false,
+	"verbosity": 2,
+	"initFilename": ".core.init.json",
+	"initPath": "/home/vagrant/projects/youtube-mp3/core/.core.init.json",
+	"projectDir": "/home/vagrant/projects/youtube-mp3",
+	"coreDir": "/home/vagrant/projects/youtube-mp3/core",
+	"templateSelect": "core-api",
+	"isGitRepo": true,
+	"createRepo": false,
+	"repoName": "",
+	"gitUser": ""
+}

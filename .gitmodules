@@ -1,0 +1,9 @@
+[submodule "core/core-init"]
+	path = core/core-init
+	url = https://njhoffman@github.com/njhoffman/core-init.git
+[submodule "core/core-js"]
+	path = core/core-js
+	url = https://njhoffman@github.com/njhoffman/core-js.git
+[submodule "core/core-api"]
+	path = core/core-api
+	url = https://njhoffman@github.com/njhoffman/core-api.git
