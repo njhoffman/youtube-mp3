@@ -15,3 +15,5 @@ reports/plato/**
 .idea/
 
 package-lock.json
+output/**
+!output/.gitkeep
