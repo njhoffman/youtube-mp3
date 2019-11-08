@@ -2,6 +2,7 @@ const path = require('path');
 const appRoot = require('app-root-path');
 
 module.exports = () => ({
+  appPath: `${appRoot}`,
   logger: {
     colors: {
       fatal: { fg: [255, 255, 255], bg: [230, 20, 20] },
@@ -17,7 +18,7 @@ module.exports = () => ({
       level: 3
     },
     stdout: {
-      level: 4
+      level: 5
     }
   },
   data: {
@@ -36,9 +37,11 @@ module.exports = () => ({
     //   ignored: []
     // }
   },
-  ffmpegPath: '/path/to/ffmpeg', // Where is the FFmpeg binary located?
-  outputPath: '/path/to/mp3/folder', // Where should the downloaded and encoded files be stored?
-  youtubeVideoQuality: 'highest', // What video quality should be used?
-  queueParallelism: 2, // How many parallel downloads/encodes should be started?
-  progressTimeout: 2000 // How long should be the interval of the progress reports
+  downloader: {
+    ffmpegPath: '/usr/bin/ffmpeg', // Where is the FFmpeg binary located?
+    outputPath: path.join(`${appRoot}`, 'output'), // Where should the downloaded and encoded files be stored?
+    youtubeVideoQuality: 'highest', // What video quality should be used?
+    queueParallelism: 1, // How many parallel downloads/encodes should be started?
+    progressTimeout: 2000 // How long should be the interval of the progress reports
+  }
 });
