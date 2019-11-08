@@ -1,7 +1,7 @@
 const path = require('path');
 const appRoot = require('app-root-path');
 
-module.exports = () => ({
+module.exports = {
   appPath: `${appRoot}`,
   logger: {
     colors: {
@@ -44,4 +44,4 @@ module.exports = () => ({
     queueParallelism: 1, // How many parallel downloads/encodes should be started?
     progressTimeout: 2000 // How long should be the interval of the progress reports
   }
-});
+};
