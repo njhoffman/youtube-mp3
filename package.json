@@ -7,6 +7,7 @@
     "dev:scrape": "nodemon --config ./nodemon.json lib/scrape.js",
     "dev:transfer": "nodemon --config ./nodemon.json lib/transfer.js",
     "transfer": "node lib/transfer.js",
+    "scraper": "node lib/scraper.js",
     "lint": "./node_modules/.bin/esw lib test --color",
     "lint:fix": "npm run lint -- --fix",
     "lint:watch": "npm run lint -- --watch",
