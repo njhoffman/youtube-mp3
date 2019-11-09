@@ -22,6 +22,8 @@ const config = {
     }
   },
   output: {
+    genre: '[Singles]',
+    album: 'Unsorted Singles',
     listPath: path.join(`${appRoot}`, 'output/songs.tsv'),
     filesPath: path.join(`${appRoot}`, 'output/files')
   },
