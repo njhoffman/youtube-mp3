@@ -17,7 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "app-root-path": "3.0.0",
-    "async": "2.6.2",
+    "bluebird": "3.7.1",
     "chalk": "2.4.2",
     "columnify": "1.5.4",
     "lodash": "4.17.15",

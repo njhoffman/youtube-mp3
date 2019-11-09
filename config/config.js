@@ -1,7 +1,7 @@
 const path = require('path');
 const appRoot = require('app-root-path');
 
-module.exports = {
+const config = {
   appPath: `${appRoot}`,
   logger: {
     colors: {
@@ -21,8 +21,11 @@ module.exports = {
       level: 5
     }
   },
+  output: {
+    listPath: path.join(`${appRoot}`, 'output/songs.tsv'),
+    filesPath: path.join(`${appRoot}`, 'output/files')
+  },
   data: {
-    outputPath: path.join(`${appRoot}`, 'output/songs.tsv'),
     plugDj: {
       filePath: path.join(`${appRoot}`, 'data/03-24-2019/plug.dj.json'),
       ignored: []
@@ -38,9 +41,10 @@ module.exports = {
   },
   downloader: {
     ffmpegPath: '/usr/bin/ffmpeg', // Where is the FFmpeg binary located?
-    outputPath: path.join(`${appRoot}`, 'output'), // Where should the downloaded and encoded files be stored?
     youtubeVideoQuality: 'highest', // What video quality should be used?
     queueParallelism: 1, // How many parallel downloads/encodes should be started?
     progressTimeout: 2000 // How long should be the interval of the progress reports
   }
 };
+
+module.exports = config;
