@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:scrape": "nodemon --config ./nodemon.json lib/scrape.js",
+    "dev:scraper": "nodemon --config ./nodemon.json lib/scraper.js",
     "dev:transfer": "nodemon --config ./nodemon.json lib/transfer.js",
     "transfer": "node lib/transfer.js",
     "scraper": "node lib/scraper.js",

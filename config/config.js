@@ -22,14 +22,13 @@ module.exports = {
     }
   },
   data: {
+    outputPath: path.join(`${appRoot}`, 'output/songs.tsv'),
     plugDj: {
       filePath: path.join(`${appRoot}`, 'data/03-24-2019/plug.dj.json'),
-      outputPath: path.join(`${appRoot}`, 'output/plug.dj.tsv'),
       ignored: []
     },
     dubtrackFm: {
       filePath: path.join(`${appRoot}`, 'data/03-24-2019/dubtrack.fm.json'),
-      outputPath: path.join(`${appRoot}`, 'output/dubtrack.fm.tsv'),
       ignored: []
     }
     // youtube: {
